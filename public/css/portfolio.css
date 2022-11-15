@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+h1{
+    font-size: 20px;
+}
+
+header{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    /* background-color: yellow; */
+}
+header .notif{
+    width: 100%;
+    height: 5%;
+    background-color:black;   
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notif .btn{
+    position: absolute;
+    right: 10px;
+}
+
+nav{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #efecec;;
+}
+
+.navbar .navlinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.navbar .navlinks ul {
+    display: flex;
+    align-items: center;
+    /* padding: 20px; */
+    
+}
+.navbar .navlinks ul li{
+    margin-left: 20px;
+}
+.navbar .navlinks ul li a:hover{
+    color: #0e0d0d;;
+}
+.navlinks ul .selected{
+    color: red;
+}
+.sign ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 20vw 60vw 20vw;
+    gap: 2;
+    
+}
+
+
+
+
+.center .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px;
+   
+}
+
+.info .perso img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.perso{
+   display: flex;
+   align-items: center;
+   
+}
+
+.perso .user{
+    margin-left: 15px;
+}
+button{
+    border-radius: 12px;
+    border: none;
+}
+.save{
+    background-color: rgb(156, 136, 136);
+    padding: 12px;
+    font-weight: bold;
+
+}
+.like{
+    background-color: rgb(224, 23, 23);
+    padding: 12px;
+    color: white;
+    font-weight: bold;
+}
+
+.back{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #f1ecec;
+    
+}
+
+.back .photo{
+    position: relative;
+    height: 54vh;
+    width: 100%;
+    margin: 60px;
+    background-color: rgb(187 187 187);
+
+}
+
+.back .headcard{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(199 149 149);;
+    display: flex;
+    gap: 30px;
+}
+
