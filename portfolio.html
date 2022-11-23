@@ -3,72 +3,153 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/public/css/portfolio.css">
-    <link rel="stylesheet" href="/public/css/fontawesome-free-5.0.10/web-fonts-with-css/css/fontawesome.min.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Italianno&display=swap" rel="stylesheet">    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+  />
 </head>
 <body>
-    <header>
-        <div class="notif">
-            <p>Join the Early Bird list & get 30% off our 8 Week Design Systems course with Dan Mall, starting February 13th.</p>
-            <div class="btn">X</div>
+    <div class="portfolio">
+        <div class="portfolio__menu_content">
+            <nav class="navbar">
+                <ul class="nav-items">
+                    <li class="nav-item"><a href="" class="nav-link">Designing effective</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Work</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Hire me</a></li>
+                </ul>
+            </nav>
+            <div class="portfolio__menu">
+                <button class="portfolio__menu_icon"><i class="fas fa-bars"></i></button>
+                <div class="portfolio__container_icons">
+                    <a href="#" class="portfolio__icon portfolio__icon--behance"><i class="fab fa-behance"></i></a>
+                    <a href="" class="portfolio__icon portfolio__icon--dribble"><i class="fab fa-dribbble"></i></a>
+                    <a href="" class="portfolio__icon portfolio__icon--pinterest"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
         </div>
         
-        <nav class="navbar">
-
-            <div class="navlinks">
-                <div class="logo">Dribble</div>
-                    <ul>
-                        <li><a href="" class="navlink-items selected" >Inspiration</a></li>
-                        <li><a href="" class="navlink-items ">Find work</a></li>
-                        <li><a href="" class="navlink-items ">Learn Design</a></li>
-                        <li><a href="" class="navlink-items ">Go Pro</a></li>
-                        <li><a href="" class="navlink-items ">Design Files</a></li>
-                        <li><a href="" class="navlink-items ">Hire Designers</a></li>
-                    </ul>
-            </div>
-            <div class="sign">
-                <ul>
-                    <li>search  </li>
-                    <li>sign in</li>
-                    <li>sign up</li>
-                </ul>
-            </div>
-        </nav> 
-
-        <div class="main">
-            <div class="left">
-
-            </div>
-            <div class="center">
-                <div class="info">
-                    <div class="perso">
-                        <img src="/public/image/fouine.jpg" alt="la fouine">
-                        <div class="user">
-                            <h1>Personal Portfolio Site</h1>
-                            <p>Syeid Haqil - Follow</p>
-                        </div>
-                    </div>
-                    <div class="action">
-                        <button class="save">Save</button>
-                        <button class="like"><i class="fa fa-heart" aria-hidden="true"></i>Like</button>
-                    </div>
-
-                    
-                </div>
-                <div class="back">
-                    <div class="photo">
-                        <div class="headcard">
-                           
-                        </div>
+            <header>
+                <span class="portfolio__label">
+                    001
+                </span>
+                <h1 class="portfolio__title">
+                    Designing <br> effective,
+                </h1>
+                <div class="portfolio__content">
+                    <div class="portfolio__description">
+                        compelling and memorable <br>
+                       <p class="portfolio__desc"> <span class="portfolio__highlight">portfolios</span> 
+                        of creative work </p>
                     </div>
                 </div>
+                <div class="portfolio__container_btn">
+                    <button class="portfolio__btn">
+                        View work <span class="portfolio__icon_btn"><i class="fas fa-play-circle"></i></span>
+                    </button>
+                </div>
+            </header>
+            <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              
+                <div class="swiper-slide">
+                    <picture>
+                        <source media="(min-width:650px)" srcset="/public/image/fouine.jpg">
+                        <source media="(min-width:465px)" srcset="/public/image/fouine.jpg">
+                        <img src="/public/image/fouine.jpg" alt="Flowers" >
+                      </picture>
+                </div>
+                
+                <div class="swiper-slide">
+                    <picture>
+                        <source media="(min-width:650px)" srcset="/public/image/fouine.jpg">
+                        <source media="(min-width:465px)" srcset="/public/image/fouine.jpg">
+                        <img src="/public/image/fouine.jpg" alt="Flowers" >
+                      </picture>
+                </div>
+
+                <div class="swiper-slide">
+                    <picture>
+                        <source media="(min-width:650px)" srcset="/public/image/fouine.jpg">
+                        <source media="(min-width:465px)" srcset="/public/image/fouine.jpg">
+                        <img src="/public/image/fouine.jpg" alt="Flowers" >
+                      </picture>
+                </div>
+
+                <div class="swiper-slide">
+                    <picture>
+                        <source media="(min-width:650px)" srcset="/public/image/fouine.jpg">
+                        <source media="(min-width:465px)" srcset="/public/image/fouine.jpg">
+                        <img src="/public/image/fouine.jpg" alt="Flowers" >
+                      </picture>
+                </div>
             </div>
-            <div class="right"></div>
+            <div class="swiper__navition">
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
         </div>
-    </header>
+    </div>
 
-    <div></div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        centeredSlides: true,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          type: "fraction",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+      var appendNumber = 4;
+      var prependNumber = 1;
+      document
+        .querySelector(".prepend-2-slides")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          swiper.prependSlide([
+            '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+            '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+          ]);
+        });
+      document
+        .querySelector(".prepend-slide")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          swiper.prependSlide(
+            '<div class="swiper-slide">Slide ' + --prependNumber + "</div>"
+          );
+        });
+      document
+        .querySelector(".append-slide")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          swiper.appendSlide(
+            '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"
+          );
+        });
+      document
+        .querySelector(".append-2-slides")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          swiper.appendSlide([
+            '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+            '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+          ]);
+        });
+    </script>
+
 </body>
 </html>

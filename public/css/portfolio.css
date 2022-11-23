@@ -1,140 +1,165 @@
-*{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
+body{
+   padding: 90px;
+   background-color: rgba(214, 203, 203, 0.748);
 }
-h1{
-    font-size: 20px;
+.portfolio{
+    position: relative;
+    display: flex;
+    max-width: 90vw;
+    max-height: 90vh;
+    background-color: white;
+    box-shadow: 20px 20px 20px #7e898d;
+  
+}
+
+.portfolio__menu_content .navbar{
+    display: none;
+    margin-left: 200px;
+    z-index: 999;
+    
 }
 
 header{
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    /* background-color: yellow; */
+    margin-right: 50px;
+    z-index: 1;
 }
-header .notif{
-    width: 100%;
-    height: 5%;
-    background-color:black;   
-    color: white;
+.portfolio__menu{
+    width: 35px;
+    height: 545px;
+    margin: 40px;
+    border: 1px solid black;
+
+}
+
+.portfolio__container_icons{
     display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
     align-items: center;
-    justify-content: center;
+    margin-top: 430px;
+
 }
 
-.notif .btn{
-    position: absolute;
-    right: 10px;
+.portfolio__icon{
+    margin-top: 10px;
 }
 
-nav{
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid #efecec;;
-}
-
-.navbar .navlinks{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-}
-.navbar .navlinks ul {
-    display: flex;
-    align-items: center;
-    /* padding: 20px; */
-    
-}
-.navbar .navlinks ul li{
-    margin-left: 20px;
-}
-.navbar .navlinks ul li a:hover{
-    color: #0e0d0d;;
-}
-.navlinks ul .selected{
-    color: red;
-}
-.sign ul li{
-    display: inline-block;
-    margin-right: 20px;
-}
-
-.main{
-    display: grid;
-    grid-template-columns: 20vw 60vw 20vw;
-    gap: 2;
-    
-}
-
-
-
-
-.center .info{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 50px;
-   
-}
-
-.info .perso img{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-}
-
-.perso{
-   display: flex;
-   align-items: center;
-   
-}
-
-.perso .user{
-    margin-left: 15px;
-}
-button{
-    border-radius: 12px;
+.portfolio__menu_icon{
     border: none;
+    margin: 5px;
 }
-.save{
-    background-color: rgb(156, 136, 136);
-    padding: 12px;
+
+.portfolio__label{
+    margin-top: 63px;
+    font-size: 3rem;
     font-weight: bold;
-
-}
-.like{
-    background-color: rgb(224, 23, 23);
-    padding: 12px;
-    color: white;
-    font-weight: bold;
+    writing-mode: vertical-rl;
 }
 
-.back{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    background-color: #f1ecec;
-    
+.portfolio__title{
+    font-size: 4rem;
+    font-style: italic;
+    font-family: 'Courgette', cursive;
+}
+.portfolio__description{
+    font-size: 1.5rem;
+}
+.portfolio__highlight{
+    font-weight: bolder;
+    background-color: yellow;
 }
 
-.back .photo{
+.portfolio__desc{
+    margin-top: 0;
+    font-size: 2rem;
+}
+
+.portfolio__btn{
     position: relative;
-    height: 54vh;
-    width: 100%;
-    margin: 60px;
-    background-color: rgb(187 187 187);
-
+    padding: 8px 52px;
+    border-radius: 20px;
 }
 
-.back .headcard{
+.portfolio__icon_btn{
     position: absolute;
-    width: 100%;
-    height: 50px;
-    background-color: rgb(199 149 149);;
-    display: flex;
-    gap: 30px;
+    right: -3;
+    top: -3;
 }
 
+ /* picture{
+    width: 100%;
+    height: 100%;
+    background-color: yellow;
+    
+} */
+.swiper {
+    width: 100%;
+    height: 100%;
+    
+  }
+.swiper-slide {
+    /* position: relative; */
+    /* width: 500px;
+    height: 100px; */
+    margin: 20px;
+    text-align: center;
+    font-size: 18px;
+    background: red;
+    
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+ 
+  .swiper-slide img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper {
+    width: 100%;
+    height:100%;
+    margin: 20px auto;
+  }
+  .append-buttons {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .append-buttons button {
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid #007aff;
+    color: #007aff;
+    text-decoration: none;
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin: 0 10px;
+    font-size: 13px;
+  }
+
+  .backphoto{
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+  }
+
+ .swiper-slide picture{
+    height: 500px;
+    width: 500px;
+    
+ }
